@@ -22,25 +22,27 @@ function myScore() {
     console.log(score);
 }
 
+// Update the button's position
 function myPosition() {  
-    // variables
+    // get the viewport width and height
     const windWidth = window.innerWidth;
     const winHeigth = window.innerHeight;
 
+    //get the buttons width and height
     const buttonWidth = btn.offsetWidth;
     const buttonHeight = btn.offsetHeight;
 
+    // get the frame window that the button can be inside so it doesn't scroll
     const maxWidth = windWidth - buttonWidth;
     const maxHeight = winHeigth - buttonHeight;
 
+    // Define a random number
     let x = getRandomNumber(0, maxWidth);
     let y = getRandomNumber(0, maxHeight);
+
+    // change the button's position
     btn.style.left = x + "px";
     btn.style.top = y + "px";
-    console.log(windWidth);
-    console.log(winHeigth);
-    console.log(x);
-    console.log(y);
 }
 
 // function that returns a random number between a min and max

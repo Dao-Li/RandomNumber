@@ -1,3 +1,18 @@
+body{
+    background-color: #1a1a1c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
 
 #buttonRandom {
 
@@ -10,4 +25,17 @@
     /* If we leave the position on block, the button won't be able to move */
     position: absolute;
     
+    /* Make the button semi-transparent */
+    opacity: 2%;
+}
+
+button {
+    font-size: 20px;
+    color: white;
+    background-color: #614f69;
+}
+
+
+#buttonRandom:hover {
+    opacity: 100%;
 }
