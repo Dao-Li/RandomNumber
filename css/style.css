@@ -1,0 +1,13 @@
+
+#buttonRandom {
+
+    /* So that the div doesn't take the whole page  */
+    width: fit-content;
+
+    /* So that the button is only on one line */
+    white-space: nowrap;
+
+    /* If we leave the position on block, the button won't be able to move */
+    position: absolute;
+    
+}
